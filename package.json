@@ -1,0 +1,26 @@
+{
+  "name": "ouramovies_backend",
+  "version": "1.0.0",
+  "description": "Movie streaming service backend to deploy movie info",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "keywords": [
+    "steraming",
+    "movies",
+    "backend"
+  ],
+  "author": "Jorge Orozco",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
