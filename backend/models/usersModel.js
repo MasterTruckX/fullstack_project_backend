@@ -13,6 +13,11 @@ const userSchema = mongoose.Schema({
     password: {
         type: String,
         requiered: [true, 'Please, write-down your password.']
+    },
+    admin: {
+        type: Boolean,
+        default: false,
+        required: true
     }
 },{
     timestamps: true

@@ -8,13 +8,13 @@ const registerUser = asyncHandler(
         const { name, email, password } = req.body
         if (!name || !email || !password) {
             res.status(400)
-            throw new Error('Please fulfill all the fields')
+            throw new Error('Please fulfill all the fields.')
         }
         // verify user existance
         const userExists = await User.findOne({email})
         if (userExists) {
             res.status(400)
-            throw new Error('That user already exists')
+            throw new Error('That user already exists.')
         }
 
         // generate hash

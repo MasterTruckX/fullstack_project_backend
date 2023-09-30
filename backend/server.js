@@ -16,6 +16,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 app.use('/ouraMovies/users', require('./routes/usersRoutes'))
+app.use('/ouraMovies/movies', require('./routes/moviesRoutes'))
 
 app.use(errorHandler)
 
