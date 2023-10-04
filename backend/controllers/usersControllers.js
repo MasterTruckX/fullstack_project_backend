@@ -54,6 +54,7 @@ const loginUser = asyncHandler(
                 _id: user._id,
                 name: user.name,
                 email: user.email,
+                admin: user.admin,
                 token: generateToken(user._id)
             })
         } else {
